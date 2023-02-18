@@ -18,7 +18,7 @@ export default function Header() {
                     <a
                         href="https://mlh.io/seasons/2023/events"
                         target="_blank"
-                        className="absolute top-0 right-[80px]">
+                        className="absolute top-0 right-[80px] hidden sm:block">
                         <img
                             src={MLH_Badge}
                             className="w-[80px]"
