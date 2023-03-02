@@ -20,7 +20,7 @@ jobs:
               run: mv public/* dist
 
             - name: Include workflows
-              run: mv .github/* dist/.github
+              run: mv .github/workflows/* dist/.github/workflows
 
             - name: Push to main
               uses: s0/git-publish-subdir-action@develop
