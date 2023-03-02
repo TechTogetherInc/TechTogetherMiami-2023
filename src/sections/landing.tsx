@@ -29,7 +29,7 @@ export default function Landing() {
                     TBA Dates, TBA Location
                 </p>
                 <a
-                    href="https://techtogether-miami-2023.devpost.com/"
+                    href="https://hackp.ac/techtogethermiami"
                     target="_blank"
                     className="mt-10 py-5 px-10 bg-[#f13c9a] rounded-xl text-lg text-white font-bold">
                     Sign up
