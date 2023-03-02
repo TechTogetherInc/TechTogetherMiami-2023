@@ -6,7 +6,6 @@ export default function Landing() {
 
     useEffect(() => {
         if (!tilt.current) return;
-        console.log(tilt.current);
         VanillaTilt.init(tilt.current, {
             max: 10,
             speed: 400,
