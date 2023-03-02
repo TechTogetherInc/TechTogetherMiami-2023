@@ -1,0 +1,32 @@
+name: Compile to main
+on:
+    push:
+        branches:
+            - dev
+jobs:
+    update:
+        runs-on: ubuntu-latest
+        name: Compile to main
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Install deps
+              run: npm install
+
+            - name: Build
+              run: npm run build
+
+            - name: Include public folder
+              run: mv public/* dist
+
+            - name: Include workflows
+              run: mv .github/* dist/.github
+
+            - name: Push to main
+              uses: s0/git-publish-subdir-action@develop
+              env:
+                  REPO: self
+                  BRANCH: main
+                  FOLDER: dist
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  MESSAGE: "Build: ({sha}) {msg}"
