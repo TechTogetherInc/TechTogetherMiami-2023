@@ -19,6 +19,9 @@ jobs:
             - name: Include public folder
               run: mv public/* dist
 
+            - name: Include workflows
+              run: mv .github/* dist/.github
+
             - name: Push to main
               uses: s0/git-publish-subdir-action@develop
               env:
