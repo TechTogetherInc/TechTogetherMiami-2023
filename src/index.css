@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.about{
+    height:100vh;
+    display: flex;
+    background: linear-gradient(#4C0D4D, #F22D89);
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+.about-col{
+    flex: 50%;
+    color: white;
+    font-size: 20px;
+    padding-right: 150px;
+}
+.about-header{
+    font-size: 30px;
+    font-weight: 650;
+    margin-bottom: 30px;
+}

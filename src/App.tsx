@@ -24,8 +24,8 @@ function App() {
             <Header />
             <main className="mt-[-100px]">
                 <Landing />
-                {/* <AboutUs />
-                <Itinerary />
+                <AboutUs />
+                {/* <Itinerary />
                 <FAQ />
                 <Sponsors /> */}
             </main>

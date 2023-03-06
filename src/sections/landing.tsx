@@ -26,7 +26,7 @@ export default function Landing() {
                     TechTogether Miami
                 </h1>
                 <p className="sm:text-3xl text-2xl mt-5">
-                    TBA Dates, TBA Location
+                    May 5-6 @ MDC BIT Center
                 </p>
                 <a
                     href="https://hackp.ac/techtogethermiami"
