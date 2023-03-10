@@ -1,6 +1,6 @@
 # TechTogether Miami's site
 
-TechTogether's site is made using [vite](https://vitejs.dev/).
+TechTogether's site is made using [vite](https://vitejs.dev/). The live site is [here](https://techtogether.io/miami/2023/)!
 
 ## Development
 
