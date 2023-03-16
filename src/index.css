@@ -1,21 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.about{
-    height:100vh;
+.about {
+    min-height: 100vh;
     display: flex;
-    background: linear-gradient(#4C0D4D, #F22D89);
+    background: linear-gradient(#4c0d4d, #f22d89);
     padding-left: 100px;
     padding-right: 100px;
     align-items: center;
 }
-.about-col{
+
+@media (max-width: 1250px) {
+    .about {
+        flex-direction: column;
+        padding-block: 150px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .about-col {
+        padding-right: 0 !important;
+        margin-bottom: 50px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.about-col {
     flex: 50%;
     color: white;
     font-size: 20px;
     padding-right: 150px;
 }
-.about-header{
+.about-header {
     font-size: 30px;
     font-weight: 650;
     margin-bottom: 30px;
