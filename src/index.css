@@ -37,3 +37,26 @@
     font-weight: 650;
     margin-bottom: 30px;
 }
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    padding-inline: 50px;
+    padding-block: 40px ;
+    flex-wrap: wrap; 
+}
+footer h2{
+    font-weight: 700;
+}
+footer h3{
+    font-size: 0.9em;
+}
+
+.footer-rightside{
+    display:flex;
+    gap: 5px;
+}
+footer img{
+    width: 30px;
+    height: 30px;
+}
