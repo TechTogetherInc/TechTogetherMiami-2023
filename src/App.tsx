@@ -13,12 +13,12 @@ function App() {
         <>
             <img
                 src={`${LandingPageBg}`}
-                className="absolute top-0 left-0 h-full min-w-full object-cover z-[-10]"
+                className="absolute top-0 left-0 h-screen min-w-full object-cover z-[-10]"
                 style={{ filter: "blur(0px)" }}
             />
             <img
                 src={`${LandingPageBg}`}
-                className="absolute top-0 left-0 h-full min-w-full object-cover z-[-10]"
+                className="absolute top-0 left-0 h-screen min-w-full object-cover z-[-10]"
                 style={{ filter: "blur(4px)" }}
             />
             <Header />
