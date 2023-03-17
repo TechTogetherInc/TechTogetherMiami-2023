@@ -9,7 +9,7 @@ export default function Header() {
                     <li>
                         <a href="/">
                             <img
-                                className="h-20"
+                                className="h-[60px] sm:h-20"
                                 src={TTM_White}
                                 alt="TechTogether Boston"
                             />
@@ -18,10 +18,10 @@ export default function Header() {
                     <a
                         href="https://mlh.io/seasons/2023/events"
                         target="_blank"
-                        className="absolute top-0 right-[80px] hidden sm:block">
+                        className="absolute top-0 right-[40px] sm:right-[80px]">
                         <img
                             src={MLH_Badge}
-                            className="w-[80px]"
+                            className="w-[50px] sm:w-[80px]"
                             alt="MLH Badge"
                         />
                     </a>
