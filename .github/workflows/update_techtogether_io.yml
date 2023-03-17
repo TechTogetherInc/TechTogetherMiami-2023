@@ -26,9 +26,9 @@ jobs:
               run: |
                   git submodule update --init --recursive --remote --force --rebase --checkout -- "miami/2023"
                   cd miami/2023
-                  git status
+                  git fetch
                   git branch -vva
-                  git checkout main
+                  git switch main
                   cd ../..
                   git submodule update --init --recursive
                   git config --global user.name "github-actions[bot]"
