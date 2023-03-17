@@ -25,14 +25,6 @@ jobs:
             - name: Update module
               run: |
                   git submodule update --init --recursive --remote --force --rebase --checkout -- "miami/2023"
-                  cd miami/2023
-                  git remote update
-                  git remote -v
-                  git fetch origin
-                  git branch -vva
-                  git switch main
-                  cd ../..
-                  git submodule update --init --recursive
                   git config --global user.name "github-actions[bot]"
                   git config --global user.email "github-actions[bot]@users.noreply.github.com"
                   git commit -am "deploy: ${{github.repository}} - ${{github.sha}}" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
