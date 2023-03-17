@@ -26,8 +26,8 @@ jobs:
               run: |
                   git submodule update --init --recursive --checkout -f --remote -- "miami/2023"
                   cd miami/2023
-                  git checkout dev
-                  git pull origin dev
+                  git checkout main
+                  git pull origin main
                   cd ../..
                   git add .
                   git config --global user.name "github-actions[bot]"
