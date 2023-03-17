@@ -26,7 +26,7 @@ jobs:
               run: |
                   git submodule update --init --recursive --checkout -f --remote -- "miami/2023"
                   cd miami/2023
-                  git pull
+                  git fetch
                   git switch main
                   git pull
                   cd ../..
