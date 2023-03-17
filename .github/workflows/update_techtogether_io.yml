@@ -28,7 +28,7 @@ jobs:
                   cd miami/2023
                   git pull
                   git switch main
-                  git pull origin main
+                  git pull
                   cd ../..
                   git add .
                   git config --global user.name "github-actions[bot]"
