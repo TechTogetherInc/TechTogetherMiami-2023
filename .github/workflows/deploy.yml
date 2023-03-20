@@ -49,7 +49,7 @@ jobs:
 
             - name: Update module
               run: |
-                  git submodule update --init --recursive --remote --force --rebase --checkout -b main -- "miami/2023"
+                  git submodule update --init --recursive --remote --force --rebase --checkout -- "miami/2023"
                   git config --global user.name "github-actions[bot]"
                   git config --global user.email "github-actions[bot]@users.noreply.github.com"
                   git commit -am "deploy: ${{github.repository}} - ${{github.sha}}" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
