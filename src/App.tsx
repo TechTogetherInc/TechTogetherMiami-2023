@@ -3,6 +3,7 @@ import AboutUs from "./sections/about-us";
 import Itinerary from "./sections/itinerary";
 import FAQ from "./sections/faq";
 import Sponsors from "./sections/sponsors";
+import Challenges from "./sections/challenges";
 import Header from "./layouts/header";
 import Footer from "./layouts/footer";
 
@@ -28,6 +29,7 @@ function App() {
                 {/* <Itinerary />
                 <FAQ />
                 <Sponsors /> */}
+                <Challenges />
             </main>
             <Footer />
         </>
