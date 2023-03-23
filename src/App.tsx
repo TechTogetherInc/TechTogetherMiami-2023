@@ -27,7 +27,8 @@ function App() {
                 <AboutUs />
                 {/* <Itinerary />
                 <FAQ />
-                <Sponsors /> */}
+                 */}
+                <Sponsors />
             </main>
             <Footer />
         </>
