@@ -22,7 +22,10 @@ function Challenge(props: { challenge: string; children: React.ReactNode }) {
 
 function Link(props: { href: string; children: string }) {
     return (
-        <a href={props.href} className="text-blue-400 font-semibold">
+        <a
+            href={props.href}
+            target="_blank"
+            className="text-blue-400 font-semibold">
             {props.children}
         </a>
     );
@@ -56,8 +59,14 @@ const challenges = [
                 Build your hackathon project with the Microsoft Cloud that
                 tackles a social impact issue of your choice, and have a chance
                 to win a{" "}
-                <Link href="">LinkedIn Premium 12-Month subscription</Link> and
-                an <Link href="">XBox Ultimate 3-Month Game Pass</Link>.
+                <Link href="https://premium.linkedin.com/">
+                    LinkedIn Premium 12-Month subscription
+                </Link>{" "}
+                and an{" "}
+                <Link href="https://www.xbox.com/xbox-game-pass">
+                    XBox Ultimate 3-Month Game Pass
+                </Link>
+                .
             </>
         ),
     },
@@ -80,17 +89,26 @@ const challenges = [
                 for free courtesy of Microsoft Azure. Full-time college students
                 are eligible for a free Azure account with $100 in credits.
                 How-To Tutorial:{" "}
-                <Link href="">https://youtu.be/1blgs6KeA_A</Link> Sign Up Link:{" "}
-                <Link href="">https://hackp.ac/MSFT-Stop1</Link> Take a photo of
-                your dashboard once you've completed this step.
+                <Link href="https://youtu.be/1blgs6KeA_A">
+                    https://youtu.be/1blgs6KeA_A
+                </Link>{" "}
+                Sign Up Link:{" "}
+                <Link href="https://hackp.ac/MSFT-Stop1">
+                    https://hackp.ac/MSFT-Stop1
+                </Link>{" "}
+                Take a photo of your dashboard once you've completed this step.
                 <br />
                 <br />
                 Stop 2: Create a GitHub repository! Navigate to GitHub and
                 create a GitHub Repository. How-To Tutorial:{" "}
-                <Link href="">https://youtu.be/mK6Uo2qxUUM</Link> Navigate to
-                GitHub
-                <Link href="">https://hackp.ac/MSFT-Stop2</Link> Save the link
-                to your repo once you've completed this step.
+                <Link href="https://youtu.be/mK6Uo2qxUUM">
+                    https://youtu.be/mK6Uo2qxUUM
+                </Link>{" "}
+                Navigate to GitHub
+                <Link href="https://hackp.ac/MSFT-Stop2">
+                    https://hackp.ac/MSFT-Stop2
+                </Link>{" "}
+                Save the link to your repo once you've completed this step.
                 <br />
                 <br />
                 Stop 3: Deploy a Service to Azure! Using your Azure for Students
@@ -98,11 +116,18 @@ const challenges = [
                 get started, with Quickstart Templates and user guides on
                 Microsoft Docs. You can deploy any code you have from your
                 Github repo directly into Azure as well. How-To Tutorial:{" "}
-                <Link href="">https://youtu.be/BEYLnr5r1p4</Link> Microsoft
-                Tutorial: <Link href="">https://hackp.ac/MSFT-AzureDocs</Link>{" "}
+                <Link href="https://youtu.be/BEYLnr5r1p4">
+                    https://youtu.be/BEYLnr5r1p4
+                </Link>{" "}
+                Microsoft Tutorial:{" "}
+                <Link href="https://hackp.ac/MSFT-AzureDocs">
+                    https://hackp.ac/MSFT-AzureDocs
+                </Link>{" "}
                 Navigate to Azure:{" "}
-                <Link href="">https://hackp.ac/MSFT-Stop3</Link> Take a photo of
-                your deployment once you've completed this step.
+                <Link href="https://hackp.ac/MSFT-Stop3">
+                    https://hackp.ac/MSFT-Stop3
+                </Link>{" "}
+                Take a photo of your deployment once you've completed this step.
             </>
         ),
     },
