@@ -2,7 +2,7 @@ export default function Challenges() {
     return (
         <section
             className="min-h-screen bg-gradient-to-b from-[#f22d89] to-[#4c0d4d] flex flex-col items-center \
-                            text-white sm:px-40 px-10 gap-5">
+                            text-white sm:px-40 px-10 py-20 gap-5">
             <h1 className="text-4xl font-semibold my-4">Challenges</h1>
             {challenges.map((c) => (
                 <Challenge challenge={c.name}>{c.description}</Challenge>
@@ -13,7 +13,7 @@ export default function Challenges() {
 
 function Challenge(props: { challenge: string; children: React.ReactNode }) {
     return (
-        <div className="bg-[rgba(0,0,0,0.2)] px-5 py-8 rounded-md">
+        <div className="bg-[rgba(0,0,0,0.2)] px-5 py-8 rounded-md w-full">
             <h1 className="text-2xl mb-4">{props.challenge}</h1>
             {props.children}
         </div>
@@ -105,5 +105,9 @@ const challenges = [
                 your deployment once you've completed this step.
             </>
         ),
+    },
+    {
+        name: "💸 Best Financial Hack Sponsored by CapitalOne",
+        description: <>Information TBA!</>,
     },
 ];
