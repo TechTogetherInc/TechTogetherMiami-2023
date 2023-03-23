@@ -25,6 +25,7 @@ function App() {
             <main className="mt-[-100px]">
                 <Landing />
                 <AboutUs />
+                <Itinerary />
                 {/* <Itinerary />
                 <FAQ />
                 <Sponsors /> */}
