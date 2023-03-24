@@ -136,8 +136,8 @@ const saturdayEvents = [
 function Timeline(props: { events: Event[] }) {
     return (
         <div className="w-full h-full">
-            <div className="relative wrap overflow-hidden h-full">
-                <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border sm:left-[50%] left-[13px]"></div>
+            <div className="relative wrap overflow-hidden h-full sm:w-[50%]">
+                <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border left-[13px]"></div>
                 {props.events.map((event, index) => {
                     if (index % 2 == 0) {
                         return (
@@ -153,8 +153,7 @@ function Timeline(props: { events: Event[] }) {
 
 function RightTimeline(props: { num: number } & Event) {
     return (
-        <div className="mb-8 flex sm:justify-between items-center w-full sm:gap-0 gap-5">
-            <div className="order-1 w-5/12 sm:block hidden"></div>
+        <div className="mb-8 flex items-center w-full gap-5">
             <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
                 <h1 className="mx-auto font-semibold text-lg text-white">
                     {props.num + 1}
@@ -163,9 +162,9 @@ function RightTimeline(props: { num: number } & Event) {
             <div
                 className={`order-1 ${
                     props.event.startsWith("Sponsor:")
-                        ? "bg-green-500"
-                        : "bg-red-400"
-                } rounded-lg shadow-xl sm:w-5/12 w-full px-6 py-4`}>
+                        ? "bg-[#e74034]"
+                        : "bg-[#fb7160]"
+                } rounded-lg shadow-xl w-full px-6 py-4`}>
                 <h3 className="mb-3 font-bold text-white text-xl">
                     {props.event}
                 </h3>
@@ -180,8 +179,7 @@ function RightTimeline(props: { num: number } & Event) {
 
 function LeftTimeline(props: { num: number } & Event) {
     return (
-        <div className="mb-8 flex sm:justify-between sm:flex-row-reverse sm:gap-0 gap-5 items-center w-full">
-            <div className="order-1 w-5/12 sm:block hidden"></div>
+        <div className="mb-8 flex gap-5 items-center w-full">
             <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
                 <h1 className="mx-auto text-white font-semibold text-lg">
                     {props.num + 1}
@@ -190,9 +188,9 @@ function LeftTimeline(props: { num: number } & Event) {
             <div
                 className={`order-2 ${
                     props.event.startsWith("Sponsor:")
-                        ? "bg-green-500"
-                        : "bg-blue-400"
-                } rounded-lg shadow-xl sm:w-5/12 w-full px-6 py-4`}>
+                        ? "bg-[#e74034]"
+                        : "bg-[#808bfa]"
+                } rounded-lg shadow-xl w-full px-6 py-4`}>
                 <h3 className="mb-3 font-bold text-white text-xl">
                     {props.event}
                 </h3>
