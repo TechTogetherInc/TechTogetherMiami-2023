@@ -28,7 +28,8 @@ function App() {
                 <Itinerary />
                 {/* <Itinerary />
                 <FAQ />
-                <Sponsors /> */}
+                 */}
+                <Sponsors />
             </main>
             <Footer />
         </>
