@@ -26,10 +26,10 @@ function App() {
             <main className="mt-[-100px]">
                 <Landing />
                 <AboutUs />
-                {/* <Itinerary />
-                <FAQ />
-                <Sponsors /> */}
+                <Itinerary />
+                {/* <FAQ /> */}
                 <Challenges />
+                <Sponsors />
             </main>
             <Footer />
         </>
