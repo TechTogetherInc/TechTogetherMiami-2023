@@ -154,7 +154,7 @@ function Timeline(props: { events: Event[] }) {
 function RightTimeline(props: { num: number } & Event) {
     return (
         <div className="mb-8 flex items-center w-full gap-5">
-            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+            <div className="z-0 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
                 <h1 className="mx-auto font-semibold text-lg text-white">
                     {props.num + 1}
                 </h1>
@@ -180,7 +180,7 @@ function RightTimeline(props: { num: number } & Event) {
 function LeftTimeline(props: { num: number } & Event) {
     return (
         <div className="mb-8 flex gap-5 items-center w-full">
-            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
+            <div className="z-0 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
                 <h1 className="mx-auto text-white font-semibold text-lg">
                     {props.num + 1}
                 </h1>
