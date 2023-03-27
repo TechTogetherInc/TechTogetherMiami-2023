@@ -6,6 +6,7 @@ import Sponsors from "./sections/sponsors";
 import Header from "./layouts/header";
 import Footer from "./layouts/footer";
 
+
 import LandingPageBg from "./assets/bg/landing_page.png";
 
 function App() {
@@ -25,8 +26,8 @@ function App() {
             <main className="mt-[-100px]">
                 <Landing />
                 <AboutUs />
-                {/* <Itinerary />
                 <FAQ />
+                {/* <Itinerary />
                 <Sponsors /> */}
             </main>
             <Footer />

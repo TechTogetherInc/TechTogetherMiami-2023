@@ -60,3 +60,61 @@ footer img{
     width: 30px;
     height: 30px;
 }
+
+
+.faq{
+    background: linear-gradient(#f22d89, #4c0d4d);
+
+    /*justify-content:center;*/
+    padding-inline: 50px;
+    padding-block: 40px ;
+    flex-wrap: wrap; 
+
+
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+.faq-title-row{
+    color: white;
+    font-size: 30px;
+    font-weight: 650;
+    margin-bottom: 5px;
+    
+}
+.faq-questions-row{
+    display: flex;
+
+}
+.faq-right-col{
+    color: #ffffff;
+    font-size: 18px;
+    flex: 50%;
+    padding: 20px;
+}
+.faq-left-col{
+    color: #ffffff;
+    font-size: 18px;
+    flex: 50%;
+    padding: 20px;
+}
+
+.question{
+   padding-block: 15px;
+   /*padding-bottom: 15px;*/
+   margin-block: 5px;
+   font-weight:400;
+   /*text-align: center;*/
+   border-bottom: solid;
+   border-radius: 5px;
+
+   
+}
+.question:hover{
+    background-color: #f064a57c;
+}
+.answer{
+    padding-bottom: 15px;
+    margin-block: 5px;
+    color: white;
+ }
